@@ -8,28 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		78F4CDB927268ADBB9FB5B28 /* libPods-1_RongChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D021B12E158F9D688707E33 /* libPods-1_RongChat.a */; };
+		C48FDBB920B862A40023236A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C48FDBB820B862A40023236A /* TestViewController.m */; };
+		C48FDBBC20B9C0440023236A /* HJConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C48FDBBB20B9C0440023236A /* HJConversationViewController.m */; };
 		C4FA4030206E884400F7BEE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA402F206E884400F7BEE5 /* AppDelegate.m */; };
-		C4FA4033206E884400F7BEE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA4032206E884400F7BEE5 /* ViewController.m */; };
 		C4FA4036206E884400F7BEE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FA4034206E884400F7BEE5 /* Main.storyboard */; };
 		C4FA4038206E884400F7BEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FA4037206E884400F7BEE5 /* Assets.xcassets */; };
 		C4FA403B206E884400F7BEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FA4039206E884400F7BEE5 /* LaunchScreen.storyboard */; };
 		C4FA403E206E884400F7BEE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA403D206E884400F7BEE5 /* main.m */; };
+		C4FA40462074FF9800F7BEE5 /* HJListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA40452074FF9800F7BEE5 /* HJListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BEB2A24EA546527C724C662 /* Pods-1_RongChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1_RongChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-1_RongChat/Pods-1_RongChat.release.xcconfig"; sourceTree = "<group>"; };
 		2D021B12E158F9D688707E33 /* libPods-1_RongChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-1_RongChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBA6CB57A09CDE2E992E801 /* Pods-1_RongChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1_RongChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-1_RongChat/Pods-1_RongChat.debug.xcconfig"; sourceTree = "<group>"; };
+		C4234795208F4A7F0022BC7D /* pchFile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pchFile.pch; sourceTree = "<group>"; };
+		C48FDBB720B862A40023236A /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		C48FDBB820B862A40023236A /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		C48FDBBA20B9C0440023236A /* HJConversationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJConversationViewController.h; sourceTree = "<group>"; };
+		C48FDBBB20B9C0440023236A /* HJConversationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJConversationViewController.m; sourceTree = "<group>"; };
 		C4FA402B206E884400F7BEE5 /* 1_RongChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1_RongChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FA402E206E884400F7BEE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4FA402F206E884400F7BEE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C4FA4031206E884400F7BEE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C4FA4032206E884400F7BEE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C4FA4035206E884400F7BEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4FA4037206E884400F7BEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4FA403A206E884400F7BEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4FA403C206E884400F7BEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4FA403D206E884400F7BEE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4FA40442074FF9800F7BEE5 /* HJListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJListViewController.h; sourceTree = "<group>"; };
+		C4FA40452074FF9800F7BEE5 /* HJListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +91,18 @@
 			children = (
 				C4FA402E206E884400F7BEE5 /* AppDelegate.h */,
 				C4FA402F206E884400F7BEE5 /* AppDelegate.m */,
-				C4FA4031206E884400F7BEE5 /* ViewController.h */,
-				C4FA4032206E884400F7BEE5 /* ViewController.m */,
+				C4FA40442074FF9800F7BEE5 /* HJListViewController.h */,
+				C4FA40452074FF9800F7BEE5 /* HJListViewController.m */,
+				C48FDBBA20B9C0440023236A /* HJConversationViewController.h */,
+				C48FDBBB20B9C0440023236A /* HJConversationViewController.m */,
+				C48FDBB720B862A40023236A /* TestViewController.h */,
+				C48FDBB820B862A40023236A /* TestViewController.m */,
 				C4FA4034206E884400F7BEE5 /* Main.storyboard */,
 				C4FA4037206E884400F7BEE5 /* Assets.xcassets */,
 				C4FA4039206E884400F7BEE5 /* LaunchScreen.storyboard */,
 				C4FA403C206E884400F7BEE5 /* Info.plist */,
 				C4FA403D206E884400F7BEE5 /* main.m */,
+				C4234795208F4A7F0022BC7D /* pchFile.pch */,
 			);
 			path = 1_RongChat;
 			sourceTree = "<group>";
@@ -227,8 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FA4033206E884400F7BEE5 /* ViewController.m in Sources */,
 				C4FA403E206E884400F7BEE5 /* main.m in Sources */,
+				C48FDBBC20B9C0440023236A /* HJConversationViewController.m in Sources */,
+				C4FA40462074FF9800F7BEE5 /* HJListViewController.m in Sources */,
+				C48FDBB920B862A40023236A /* TestViewController.m in Sources */,
 				C4FA4030206E884400F7BEE5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 229XF58NF5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/1_RongChat/pchFile.pch";
 				INFOPLIST_FILE = 1_RongChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josie.--RongChat";
@@ -381,6 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 229XF58NF5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/1_RongChat/pchFile.pch";
 				INFOPLIST_FILE = 1_RongChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.josie.--RongChat";

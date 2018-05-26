@@ -1,0 +1,25 @@
+//
+//  pchFile.pch
+//  1_RongChat
+//
+//  Created by Josie on 2018/4/24.
+//  Copyright © 2018年 Josie. All rights reserved.
+//
+
+#ifndef pchFile_pch
+#define pchFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef DEBUG
+#define printLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define printLog(...)
+#endif
+
+
+
+
+
+#endif /* pchFile_pch */

@@ -8,12 +8,13 @@
 
 #import "AppDelegate.h"
 #import <UIKit/UIKit.h>
-
+#import "HJListViewController.h"
 
 #define MY_APPKEY   @"0vnjpoad06ezz"
 #define MY_TOKEN    @"ktISXFSQj4qivO7IBWLnh6e9cQWfiBGghfrMmVJTK6ApkpsIMwDTHQx+C6XocFJsR1G5cvGQ8wY="
 
 @interface AppDelegate ()
+
 
 @end
 
@@ -23,6 +24,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+
+    
+    
+    
+    
     //融云即时通讯
     
     //初始化融云SDK。
@@ -31,9 +37,18 @@
     //连接融云
     [[RCIM sharedRCIM] connectWithToken:MY_TOKEN success:^(NSString *userId) {
         
-        //                [[RCIM sharedRCIM] setUserInfoDataSource:self];
         NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
         
+        
+        // 连接成功后 设置代理(用户信息代理)
+        [[RCIM sharedRCIM] setUserInfoDataSource:self];
+        
+        /*  设置当前登录用户信息
+            与融云服务器建立连接之后，应该设置当前用户的用户信息，用于SDK显示和发送
+        */
+        [RCIM sharedRCIM].currentUserInfo.userId = @"133";
+        [RCIM sharedRCIM].currentUserInfo.name = @"wo";
+        [RCIM sharedRCIM].currentUserInfo.portraitUri = @"https://img-blog.csdn.net/2018032015362964";
         
     } error:^(RCConnectErrorCode status) {
         NSLog(@"登陆的错误码为:%ld", (long)status);
@@ -45,29 +60,35 @@
     }];
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //融云即时通讯
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(didReceiveMessageNotification:)
-                                                 name:RCKitDispatchMessageNotification
-                                               object:nil];
-    
-    [[RCIM sharedRCIM] setConnectionStatusDelegate:self];
-    
-
-    
-    
     return YES;
 }
+
+
+// 设置会话的头像和昵称等   是好友的头像和昵称，不是自己的
+- (void)getUserInfoWithUserId:(NSString *)userId
+                   completion:(void (^)(RCUserInfo *userInfo))completion
+{
+    NSLog(@"------ userID = %@ ---------", userId);
+    // 设置用户头像
+    if ([userId isEqualToString:@"199"]) {
+        RCUserInfo *userInfo = [[RCUserInfo alloc] init];
+        userInfo.userId = userId;
+        userInfo.name = @"小月月";
+        userInfo.portraitUri = @"https://img-blog.csdn.net/20180401185902182";
+        
+        return completion(userInfo);
+    }
+    if ([userId isEqualToString:@"233"]) {
+        RCUserInfo *userInfo = [[RCUserInfo alloc] init];
+        userInfo.userId = userId;
+        userInfo.name = @"baby";
+        userInfo.portraitUri = @"https://img-blog.csdn.net/2018032015362964";
+        
+        return completion(userInfo);
+    }
+    return completion(nil);
+}
+
 
 
 /*!
@@ -79,7 +100,7 @@
  */
 - (void)onRCIMConnectionStatusChanged:(RCConnectionStatus)status
 {
-    
+    printf("*******************\n");
 }
 
 

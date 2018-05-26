@@ -10,7 +10,7 @@
 
 #import <RongIMKit/RongIMKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, RCIMConnectionStatusDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, RCIMConnectionStatusDelegate, RCIMUserInfoDataSource>
 
 @property (strong, nonatomic) UIWindow *window;
 
